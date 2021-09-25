@@ -37,8 +37,3 @@
 .navbar-dark {
     background-color: #512da8;
 }
-
-.breadcrumb > li + li::before {
-    padding: 5px;
-    content: "/";
-}
