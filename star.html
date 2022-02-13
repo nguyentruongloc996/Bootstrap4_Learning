@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+    
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-star-rating/css/star-rating.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-star-rating/themes/krajee-svg/theme.css">
+    </head>
+    <body>    
+        <div class="container">
+            <div class="row">
+                <header class="col-12">
+                    <h1>Test Rating-Stars</h1>
+                </header>
+            </div>
+            <div class="row">
+                <div class="col-12">
+                    <label for="input-1" class="control-label">Rate This</label>
+                    <input id="input-1" name="input-name" class="rating-loading">
+                </div>
+            </div>
+        </div>
+    
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+        <script src="node_modules/bootstrap-star-rating/js/star-rating.js"></script>
+        <script src="node_modules/bootstrap-star-rating/themes/krajee-svg/theme.js"></script>
+        <script>
+            $(document).ready(function() {
+                $("#input-1").rating({size: 'xl', step: 0.5, showCaption: false});
+            });
+        </script>
+    </body>
+</html>
